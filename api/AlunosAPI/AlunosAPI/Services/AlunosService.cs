@@ -24,6 +24,8 @@ namespace AlunosAPI.Services
             {
                 return aluno;
             }
+
+            return null;
         }
         public async Task<IEnumerable<Aluno>> ObterAlunosPorNome(string nome)
         {
