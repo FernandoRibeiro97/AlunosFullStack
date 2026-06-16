@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlunosAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08686eb707769c5603103ef775f6ffdc824a5b67")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlunosAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlunosAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,7 +1,32 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|d:\\projetos\\alunosfull\\api\\alunosapi\\alunosapi\\controllers\\alunoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|solutionrelative:alunosapi\\controllers\\alunoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|d:\\projetos\\alunosfull\\api\\alunosapi\\alunosapi\\services\\alunosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|solutionrelative:alunosapi\\services\\alunosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|d:\\projetos\\alunosfull\\api\\alunosapi\\alunosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|solutionrelative:alunosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|d:\\projetos\\alunosfull\\api\\alunosapi\\alunosapi\\services\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|solutionrelative:alunosapi\\services\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|d:\\projetos\\alunosfull\\api\\alunosapi\\alunosapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|solutionrelative:alunosapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|d:\\projetos\\alunosfull\\api\\alunosapi\\alunosapi\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2F169DDC-DEEB-49EA-9745-ECF0C6019FFD}|AlunosAPI\\AlunosAPI.csproj|solutionrelative:alunosapi\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 232,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +47,84 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AlunosController.cs",
+              "DocumentMoniker": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Controllers\\AlunosController.cs",
+              "RelativeDocumentMoniker": "AlunosAPI\\Controllers\\AlunosController.cs",
+              "ToolTip": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Controllers\\AlunosController.cs",
+              "RelativeToolTip": "AlunosAPI\\Controllers\\AlunosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T16:35:09.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AlunosService.cs",
+              "DocumentMoniker": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Services\\AlunosService.cs",
+              "RelativeDocumentMoniker": "AlunosAPI\\Services\\AlunosService.cs",
+              "ToolTip": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Services\\AlunosService.cs",
+              "RelativeToolTip": "AlunosAPI\\Services\\AlunosService.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwDAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T16:22:27.245Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAlunoService.cs",
+              "DocumentMoniker": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Services\\IAlunoService.cs",
+              "RelativeDocumentMoniker": "AlunosAPI\\Services\\IAlunoService.cs",
+              "ToolTip": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Services\\IAlunoService.cs",
+              "RelativeToolTip": "AlunosAPI\\Services\\IAlunoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T16:18:59.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AlunosAPI\\Program.cs",
+              "ToolTip": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Program.cs",
+              "RelativeToolTip": "AlunosAPI\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T16:09:35.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AlunosAPI\\Data\\AppDbContext.cs",
+              "ToolTip": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "AlunosAPI\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T16:04:27.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Aluno.cs",
+              "DocumentMoniker": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Models\\Aluno.cs",
+              "RelativeDocumentMoniker": "AlunosAPI\\Models\\Aluno.cs",
+              "ToolTip": "D:\\Projetos\\AlunosFull\\api\\AlunosAPI\\AlunosAPI\\Models\\Aluno.cs",
+              "RelativeToolTip": "AlunosAPI\\Models\\Aluno.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-16T15:45:20.164Z",
+              "EditorCaption": ""
             }
           ]
         }
