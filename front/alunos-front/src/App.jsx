@@ -12,6 +12,7 @@ function App() {
   const [data, setData] = useState([]);
   const [modalIncluir, setModalIncluir] = useState(false);
   const [modalEditar, setModalEditar] = useState(false);
+  const [modalExcluir, setModalExcluir] = useState(false);
 
   const obterAlunos = async()=>{
     await axios.get(baseUrl)
@@ -41,6 +42,10 @@ function App() {
     setModalEditar(!modalEditar)
   }
 
+  const abrirModalExcluir = () =>{
+    setModalExcluir(!modalExcluir)
+  }
+
   const alunoPreenchido = e=>{
     const {name, value} = e.target;
     setAlunoSelecionado({
@@ -64,7 +69,7 @@ function App() {
 
   const selecionarAluno=(aluno, opcao)=>{
     setAlunoSelecionado(aluno);
-    (opcao === "Editar") && abrirModalEditar();
+    (opcao === "Editar") ? abrirModalEditar() : abrirModalExcluir();
   }
 
   const atualizarAluno = async()=>{
@@ -85,6 +90,16 @@ function App() {
     }).catch(error => {
       console.log(error)
     });
+  }
+
+  const excluirAluno = async()=>{
+    await axios.delete(baseUrl+"/"+alunoSelecionado.id)
+    .then(response =>{
+      setData(data.filter(aluno=> aluno.id !== response.data));
+      abrirModalExcluir();
+    }).catch(error=>{
+      console.log(error);
+    })
   }
 
   return (
@@ -167,6 +182,16 @@ function App() {
         <ModalFooter>
           <button className='btn btn-primary' onClick={() => atualizarAluno()}>Atualizar</button>
           <button className='btn btn-danger' onClick={() => abrirModalEditar()}>Cancelar</button>
+        </ModalFooter>
+      </Modal>
+
+      <Modal isOpen={modalExcluir}>
+        <ModalBody>
+          Confirma a exclusão deste(a) aluno(a) : {alunoSelecionado && alunoSelecionado.nome} ?
+        </ModalBody>
+        <ModalFooter>
+          <button className='btn btn-danger' onClick={() => excluirAluno()}> Sim </button>
+          <button className='btn btn-secondary' onClick={() => abrirModalExcluir()}> Não </button>
         </ModalFooter>
       </Modal>
     </>
