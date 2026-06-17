@@ -84,12 +84,12 @@ namespace AlunosAPI.Controllers
         {
             try
             {
-                var alunoExistente = await _alunoService.ObterAluno(id);
+                //var alunoExistente = await _alunoService.ObterAluno(id);
 
-                if (alunoExistente == null)
-                {
-                    return NotFound("Aluno não existe !");
-                }
+                //if (alunoExistente == null)
+                //{
+                //    return NotFound("Aluno não existe !");
+                //}
 
                 if (id == aluno.Id)
                 {
