@@ -74,8 +74,8 @@ function App() {
     await axios.post(baseUrl, alunoSelecionado)
     .then(response => {
       setData(data.concat(response.data));
-      abrirModal();
       setAtualizarDados(true);
+      abrirModalInserir();
     }).catch(error=>{
       console.log(error);
     })
@@ -95,8 +95,8 @@ function App() {
           aluno.idade = resposta.idade;
         }
       });
-      abrirModalEditar();
       setAtualizarDados(true);
+      abrirModalEditar();
     }).catch(error => {
       console.log(error)
     });
@@ -106,8 +106,8 @@ function App() {
     await axios.delete(baseUrl+"/"+alunoSelecionado.id)
     .then(response =>{
       setData(data.filter(aluno=> aluno.id !== response.data));
-      abrirModalExcluir();
       setAtualizarDados(true);
+      abrirModalExcluir();
     }).catch(error=>{
       console.log(error);
     })
