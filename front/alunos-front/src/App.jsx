@@ -13,6 +13,7 @@ function App() {
   const [modalIncluir, setModalIncluir] = useState(false);
   const [modalEditar, setModalEditar] = useState(false);
   const [modalExcluir, setModalExcluir] = useState(false);
+  const [atualizarDados, setAtualizarDados] = useState(true);
 
   const obterAlunos = async()=>{
     await axios.get(baseUrl)
@@ -26,6 +27,13 @@ function App() {
   useEffect(()=>{
     obterAlunos();
   });
+
+  useEffect(()=>{
+    if(atualizarDados){
+      obterAlunos();
+      setAtualizarDados(false);
+    }
+  }, [atualizarDados])
 
   const [alunoSelecionado, setAlunoSelecionado] = useState({
     id: '',
@@ -54,6 +62,11 @@ function App() {
     console.log(alunoSelecionado);
   }
 
+    const selecionarAluno=(aluno, opcao)=>{
+    setAlunoSelecionado(aluno);
+    (opcao === "Editar") ? abrirModalEditar() : abrirModalExcluir();
+  }
+
   const inserirAluno = async()=>{
     delete alunoSelecionado.id;
     alunoSelecionado.idade = parseInt(alunoSelecionado.idade);
@@ -62,14 +75,10 @@ function App() {
     .then(response => {
       setData(data.concat(response.data));
       abrirModal();
+      setAtualizarDados(true);
     }).catch(error=>{
       console.log(error);
     })
-  }
-
-  const selecionarAluno=(aluno, opcao)=>{
-    setAlunoSelecionado(aluno);
-    (opcao === "Editar") ? abrirModalEditar() : abrirModalExcluir();
   }
 
   const atualizarAluno = async()=>{
@@ -87,6 +96,7 @@ function App() {
         }
       });
       abrirModalEditar();
+      setAtualizarDados(true);
     }).catch(error => {
       console.log(error)
     });
@@ -97,6 +107,7 @@ function App() {
     .then(response =>{
       setData(data.filter(aluno=> aluno.id !== response.data));
       abrirModalExcluir();
+      setAtualizarDados(true);
     }).catch(error=>{
       console.log(error);
     })
